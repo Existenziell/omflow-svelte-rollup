@@ -1,4 +1,10 @@
 /node_modules/
 /public/build/
-
 .DS_Store
+
+# parcel
+.cache
+dist
+
+# dotenv environment variables file
+.env

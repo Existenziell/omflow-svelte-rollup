@@ -4,9 +4,6 @@
   import { currentUser, teachers } from "../../stores";
   import { link } from "svelte-spa-router";
   import ImageUpload from "./ImageUpload.svelte";
-  import { log } from "console";
-
-  let API_URL = process.env.API_URL;
 
   let name, bio, address, quote, instagram, pose, styles, levels, coordinates;
   let allStyles = [];
@@ -34,7 +31,7 @@
     formData.append("pose", pose);
     formData.append("file", image);
 
-    const response = await fetch(`${API_URL}/teachers/create/`, {
+    const response = await fetch(`${process.env.API_URL}/teachers/create/`, {
       method: "POST",
       body: formData,
       headers: { "x-auth-token": $currentUser.token },
@@ -59,9 +56,9 @@
   };
 
   onMount(async () => {
-    const lvls = await fetch(`${API_URL}/practices/levels`);
+    const lvls = await fetch(`${process.env.API_URL}/practices/levels`);
     allLevels = await lvls.json();
-    const styls = await fetch(`${API_URL}/practices/styles`);
+    const styls = await fetch(`${process.env.API_URL}/practices/styles`);
     allStyles = await styls.json();
   });
 </script>

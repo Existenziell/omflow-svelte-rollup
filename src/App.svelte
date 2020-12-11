@@ -3,7 +3,6 @@
   import Header from "./components/Header.svelte";
   import Router from "svelte-spa-router";
   import routes from "./routes";
-  import WebApp from "./components/WebApp/WebApp.svelte";
 
   import {
     currentUser,
@@ -64,11 +63,7 @@
   <title>{appName}</title>
 </svelte:head>
 
-{#if location.href.includes('/app')}
-  <WebApp />
-{:else}
-  <div class="app">
-    <Header />
-    <Router {routes} />
-  </div>
-{/if}
+<div class="app">
+  <Header />
+  <Router {routes} />
+</div>

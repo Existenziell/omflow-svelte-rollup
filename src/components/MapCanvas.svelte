@@ -9,7 +9,6 @@
 
   let container;
   let map;
-  let API_URL = process.env.API_URL;
   let geocoder;
 
   const addLayers = async () => {

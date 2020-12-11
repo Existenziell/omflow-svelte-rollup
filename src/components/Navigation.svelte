@@ -15,8 +15,7 @@
     "Schedule",
     "MatchMe",
     "Map",
-    "Dashboard",
-    "App",
+    "Dashboard"
   ];
 
   const logoutAndRedirect = () => {
@@ -53,7 +52,7 @@
     in:fly={{ y: -200, duration: 500, delay: 400 }}>
     <div class="navbar-brand">
       <a class="navbar-item" href="/" use:link aria-hidden="true">
-        <img src="public/logo-text-black.png" alt="Logo" />
+        <img src="/icons/logo-text-black.png" alt="Logo" />
       </a>
 
       <!-- Collapse button -->
@@ -72,7 +71,6 @@
         <span aria-hidden="true">MatchMe</span>
         <span aria-hidden="true">Map</span>
         <span aria-hidden="true">Dashboard</span>
-        <span aria-hidden="true">App</span>
       </a>
     </div>
 

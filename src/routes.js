@@ -1,64 +1,43 @@
-import { wrap } from 'svelte-spa-router/wrap'
-import NotFound from './routes/NotFound'
+import NotFound from './routes/NotFound.svelte'
+import Signup from './routes/Signup.svelte'
+import About from './routes/About.svelte'
+import Teachers from './routes/Teachers.svelte'
+import Teacher from './routes/Teacher.svelte'
+import TeacherCreate from './routes/dashboard/TeacherCreate.svelte'
+import Classes from './routes/Classes.svelte'
+import Class from './routes/Class.svelte'
+import Schedule from './routes/Schedule.svelte'
+import MatchMe from './routes/MatchMe.svelte'
+import Home from './routes/Home.svelte'
+import Map from './routes/Map.svelte'
+import Dashboard from './routes/dashboard/Dashboard.svelte'
 
 // https://github.com/ItalyPaleAle/svelte-spa-router
 export default {
 
-  '/': wrap({
-    asyncComponent: () => import('./routes/Home.svelte')
-  }),
+  '/': Home,
 
-  '/user/signup': wrap({
-    asyncComponent: () => import('./components/User/Signup.svelte')
-  }),
+  '/user/signup': Signup,
 
-  '/about': wrap({
-    asyncComponent: () => import('./routes/About.svelte')
-  }),
+  '/about': About,
 
-  '/teachers/': wrap({
-    asyncComponent: () => import('./routes/Teachers.svelte')
-  }),
-  '/teacher/:id': wrap({
-    asyncComponent: () => import('./routes/Teacher.svelte')
-  }),
-  '/teacher-create/': wrap({
-    asyncComponent: () => import('./routes/dashboard/TeacherCreate.svelte')
-  }),
+  '/teachers/': Teachers,
+  '/teacher/:id': Teacher,
+  '/teacher-create/': TeacherCreate,
 
-  '/classes/': wrap({
-    asyncComponent: () => import('./routes/Classes.svelte')
-  }),
-  '/class/:id/': wrap({
-    asyncComponent: () => import('./routes/Class.svelte')
-  }),
+  '/classes/': Classes,
+  '/class/:id/': Class,
 
-  '/signup/:id': wrap({
-    asyncComponent: () => import('./routes/Signup.svelte')
-  }),
+  '/signup/:id': Signup,
 
-  '/schedule/': wrap({
-    asyncComponent: () => import('./routes/Schedule.svelte')
-  }),
-  '/schedule/signup': wrap({
-    asyncComponent: () => import('./routes/Schedule.svelte')
-  }),
+  '/schedule/': Schedule,
+  '/schedule/signup': Schedule,
 
-  '/matchme/': wrap({
-    asyncComponent: () => import('./routes/MatchMe.svelte')
-  }),
+  '/matchme/': MatchMe,
 
-  '/map/': wrap({
-    asyncComponent: () => import('./routes/Map.svelte')
-  }),
+  '/map/': Map,
 
-  '/dashboard/': wrap({
-    asyncComponent: () => import('./routes/dashboard/Dashboard.svelte')
-  }),
-
-  '/app/': wrap({
-    asyncComponent: () => import('./components/WebApp/WebApp.svelte')
-  }),
+  '/dashboard/': Dashboard,
 
   // Catch-all - this is optional, but if present it must be the last
   '*': NotFound,
