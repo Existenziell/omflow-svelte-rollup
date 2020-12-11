@@ -8,15 +8,7 @@
 
   let visible = false;
 
-  let links = [
-    "About",
-    "Teachers",
-    "Classes",
-    "Schedule",
-    "MatchMe",
-    "Map",
-    "Dashboard"
-  ];
+  let links = ["Teachers", "Schedule", "MatchMe", "Map", "About", "Dashboard"];
 
   const logoutAndRedirect = () => {
     // Reset localStorage and set values in store
@@ -63,14 +55,9 @@
         aria-label="menu"
         aria-expanded="false"
         data-target="navbar">
-        <span aria-hidden="true">About</span>
-        <span aria-hidden="true">Teachers</span>
-        <span aria-hidden="true">Classes</span>
-        <span aria-hidden="true">Classes</span>
-        <span aria-hidden="true">Schedule</span>
-        <span aria-hidden="true">MatchMe</span>
-        <span aria-hidden="true">Map</span>
-        <span aria-hidden="true">Dashboard</span>
+        {#each links as l}
+          <span aria-hidden="true">{l.toLowerCase()}</span>
+        {/each}
       </a>
     </div>
 
