@@ -1,5 +1,5 @@
 import NotFound from './routes/NotFound.svelte'
-import Signup from './routes/Signup.svelte'
+import Signup from './components/User/Signup.svelte'
 import About from './routes/About.svelte'
 import Teachers from './routes/Teachers.svelte'
 import Teacher from './routes/Teacher.svelte'
