@@ -49,8 +49,7 @@
     has become pretty obvious that a new website will not solve the underlying
     problems of Omflow. All arrows point towards you as the main problem of
     Omflow. And the reason people quit...
-  </p>
-  <p>
+    <br />
     I hate to write this, but I hope it serves as a wakeup call for you to
     understand that nobody wants to harm you, everybody is/was trying to help,
     but you'd rather shut it down, if it 'threatens' your vision...
