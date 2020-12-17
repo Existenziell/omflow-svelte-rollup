@@ -55,7 +55,7 @@
 <style>
   /* Accounting for the fixed navbar */
   .app {
-    padding-top: 52px;
+    /* padding-top: 52px; */
   }
 </style>
 
@@ -64,6 +64,6 @@
 </svelte:head>
 
 <div class="app">
-  <Header />
+  <!-- <Header /> -->
   <Router {routes} />
 </div>

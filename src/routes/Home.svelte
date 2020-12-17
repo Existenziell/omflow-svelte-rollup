@@ -39,8 +39,8 @@
     you... First, I was not sure about the validity of this assessment, but
     after digging a bit deeper and hearing many things from inside and outside
     Omflow, I am sure, my feelings were correct. The image of you as a person
-    that manifested is truly devastating... And I wonder, if you just don't want
-    to see the signs?
+    that manifested itself is truly devastating... And I wonder, if you just
+    don't want to see the signs?
   </p>
   <p>
     I am not sure if you realize how difficult it actually is to work with/for
@@ -52,14 +52,14 @@
   </p>
   <p>
     I hate to write this, but I hope it serves as a wakeup call for you to
-    understand that nobody wants to harm you, everybody is trying to help, but
-    you'd rather shut it down, if it 'threatens' your vision...
+    understand that nobody wants to harm you, everybody is/was trying to help,
+    but you'd rather shut it down, if it 'threatens' your vision...
   </p>
 
   <p>
     Nonetheless, to fulfill my part of the agreement I will build the site to
     your specifications as stated in the Google Document on Tab “v3.0
-    Requirements”. Due date is 14.01.2020. I will not accept changes in the
+    Requirements”. Due date is 14.01.2021. I will not accept changes in the
     scope or the date of delivery. After that I consider our cooperation as
     finished.
   </p>
